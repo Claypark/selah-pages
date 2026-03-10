@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selah — A Daily Prayer &amp; Scripture Companion</title>
+  <style>
+    :root {
+      --bg: #faf9f6;
+      --text: #2c2c2c;
+      --muted: #6b6b6b;
+      --accent: #5b6e4e;
+      --border: #e5e2dc;
+      --card: #ffffff;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans KR', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.75;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      -webkit-font-smoothing: antialiased;
+    }
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 24px;
+      text-align: center;
+    }
+    .logo {
+      font-family: 'Georgia', 'Noto Serif KR', serif;
+      font-size: 48px;
+      font-weight: 500;
+      letter-spacing: -1px;
+      color: var(--text);
+    }
+    .tagline {
+      margin-top: 8px;
+      font-size: 16px;
+      color: var(--muted);
+      font-style: italic;
+    }
+    .description {
+      margin-top: 32px;
+      max-width: 420px;
+      font-size: 15px;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+    .links {
+      margin-top: 48px;
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .links a {
+      display: inline-block;
+      padding: 12px 28px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: var(--card);
+      color: var(--text);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      transition: all 0.2s;
+    }
+    .links a:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+      transform: translateY(-1px);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+    footer {
+      text-align: center;
+      padding: 24px;
+      border-top: 1px solid var(--border);
+      font-size: 13px;
+      color: var(--muted);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #1a1a1a;
+        --text: #e0ddd6;
+        --muted: #9a9a9a;
+        --accent: #8fa87c;
+        --border: #333;
+        --card: #242424;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="logo">Selah</div>
+    <div class="tagline">to pause and reflect</div>
+    <p class="description">
+      매일의 기도와 성경 묵상을 돕는 앱입니다.<br>
+      오늘의 말씀, 중보기도, 묵상, 성경 읽기 기능을 제공합니다.
+    </p>
+    <div class="links">
+      <a href="privacy-policy.html">개인정보처리방침</a>
+      <a href="terms-of-service.html">이용약관</a>
+    </div>
+  </main>
+  <footer>
+    &copy; 2026 Selah. All rights reserved.
+  </footer>
+</body>
+</html>
